@@ -123,3 +123,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = "smtp.gmail.com"
+
+EMAIL_USE_TLS = True
+
+EMAIL_PORT = 587
+
+EMAIL_HOST_USER = "richardgodplay@gmail.com"
+
+EMAL_HOST_PASSWORD = "playstation42019"
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+DEFAULT_TO_EMAIL = EMAIL_HOST_USER
+
+
